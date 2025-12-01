@@ -38,3 +38,5 @@ match optellen :
     case "-" :print(getal1 - getal2)
     case "*" :print(getal1 * getal2)
     case "/" :print(getal1 / getal2)
+
+#test

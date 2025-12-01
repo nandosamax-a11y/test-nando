@@ -32,4 +32,5 @@ naam2 = input("naam 2: ")
 if naam1 == naam2: print("namen zijn gelijk")
 if not naam1 == naam2: print("namen zijn niet gelijk")
 
+# test
 

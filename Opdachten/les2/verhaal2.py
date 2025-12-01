@@ -19,3 +19,4 @@ print(f"{naam} is van plan om samen met {naam_vriend} {hoeveelheid} pizza's te b
 print(f"Een enkele pizza kostte €{pizza_prijs:.2f} dus uiteindelijk hebben zij €{totale_bedrag:.2f} betaald")
 print(f"Onderweg vonden zij een kortingsbon van 15% op de grond. Zij bestelden opnieuw {hoeveelheid} pizza's en hoefden dit keer maar €{korting_totale_bedrag:.2f} te betalen. ")
 print(f"Achteraf waren {naam} en {naam_vriend} erg {emotie}. De pizza's waren {voedseltoestand}.")
+#test

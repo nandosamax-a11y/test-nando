@@ -8,3 +8,5 @@ print(f"Andrew en {naam} gingen even {hobby}\n"
       f"maar tijdens het {hobby}ging het fout \n"
       f"de dikke {auto}van Andrew ging in de fik\n"
       f"Andrew dacht dat dit maar {schade} maar dit koste uiteindelijk {kosten}")
+# test
+
