@@ -10,3 +10,4 @@ print(f"Andrew en {naam} gingen even {hobby}\n"
       f"Andrew dacht dat dit maar {schade} maar dit koste uiteindelijk {kosten}")
 # test
 
+
