@@ -93,16 +93,16 @@ from http.cookiejar import join_header_words
 
 totaal = 0
 aantal = 0
-getal = int(input("getal"))
-
+getal = int(input("voer getallen in en sluit met 0: "))
 
 while getal > 0 :
     totaal += getal
     aantal += 1
     gemiddeld = totaal / aantal
-    getal = int(input("getal"))
+    print(aantal)
     print(totaal)
     print(gemiddeld)
+    getal = int(input("getal: "))
 
 
 
@@ -117,3 +117,12 @@ while getal > 0 :
 #   2 x 5 = 10
 #   3 x 5 = 15    # enz. tot en met 10
 # ==========================================
+
+tafel = 0
+getal2 = int(input('vul je getal in waar je de tafel van ziet'))
+
+
+while tafel < 10 :
+    tafel += 1
+    tafel_uitkomst = tafel * getal2
+    print(f'{tafel} x {getal2} = {tafel_uitkomst}')
