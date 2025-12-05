@@ -10,7 +10,7 @@
 #     print(a)
 # else:
 #     print(b)
-from http.cookiejar import join_header_words
+# from http.cookiejar import join_header_words
 
 # ==========================================
 # Opgave 1:
@@ -21,14 +21,14 @@ from http.cookiejar import join_header_words
 # ==========================================
 
 
-# getal_1 = int(input("voer een getal in: "))
-# getal_2 = int(input("voer een getal in: "))
-# getal3 = 1
-# som = int(getal_1 // getal_2)
-# som2 =int(getal_2 // getal_1)
-# if som > getal3: print(f'{getal_1} is een veelvoud van {getal_2}')
-# elif som2 > getal3: print(f'{getal_2} is een veelvoud van {getal_1}')
-# else:print("er is geen veelvoud")
+getal_1 = int(input("voer een getal in: "))
+getal_2 = int(input("voer een getal in: "))
+getal3 = 1
+som = int(getal_1 // getal_2)
+som2 =int(getal_2 // getal_1)
+if som > getal3: print(f'{getal_1} is een veelvoud van {getal_2}')
+elif som2 > getal3: print(f'{getal_2} is een veelvoud van {getal_1}')
+else:print("er is geen veelvoud")
 
 
 
@@ -64,14 +64,14 @@ from http.cookiejar import join_header_words
 # Voorbeeld input: 3 1 2
 # Voorbeeld output: 1 2 3
 # ==========================================
-
+#
 # Lees een regel met inputs en splits deze op spaties
 # invoer1 = int(input("Voer meerdere getallen in, gescheiden door spaties: "))
 # invoet2 = int(input("Voer meerdere getallen in, gescheiden door spaties: "))
 # invoet3 = int(input("Voer meerdere getallen in, gescheiden door spaties: "))
 # invoer5 = int(input("Voer meerdere getallen in, gescheiden door spaties: "))
 # invoer4 = int(input("Voer meerdere getallen in, gescheiden door spaties: "))
-#
+
 # getallen = sorted(f'{invoer1}{invoet2}{invoet3}{invoer4}{invoer5}')
 # print(getallen)
 

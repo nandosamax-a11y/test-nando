@@ -7,7 +7,7 @@
 #
 # Aan het einde print je de lijst 'getallen'.
 # ==========================================
-
+from operator import index
 
 # Maak de lijst tafel_van_drie = [3, 6, 9, 12, 16, 18, 24, 27, 32] aan. Je ziet al dat er een aantal waardes niet kloppen.
 #
@@ -16,13 +16,13 @@
 # Gebruik de methode append() om 30 toe te voegen aan het eind van de lijst
 # Gebruik de methode insert() om 21 toe te voegen tussen 18 en 24
 #
-tafel_van_drie = [3, 6, 9, 12, 16, 18, 24, 27, 32]
-tafel_van_drie[4] = 15
-tafel_van_drie.remove(32)
-tafel_van_drie.append(30)
-tafel_van_drie.insert(6,21)
-
-print(tafel_van_drie)
+# tafel_van_drie = [3, 6, 9, 12, 16, 18, 24, 27, 32]
+# tafel_van_drie[4] = 15
+# tafel_van_drie.remove(32)
+# tafel_van_drie.append(30)
+# tafel_van_drie.insert(6,21)
+#
+# print(tafel_van_drie)
 
 
 
@@ -42,19 +42,19 @@ print(tafel_van_drie)
 # - Vervang het getal 4 door het getal 5
 # - Print de lijst 'getallen'
 #
-
-getallen = [2, 4, 7, 11 ,19]
-getallen.append(22)
-getallen.insert(2,6)
-getallen[1] = 5
-print(getallen)
+#
+# getallen = [2, 4, 7, 11 ,19]
+# getallen.append(22)
+# getallen.insert(2,6)
+# getallen[1] = 5
+# print(getallen)
 
 
 # Verwachte uitkomst: [2, 5, 6, 7, 11, 19, 22]
 # ==========================================
 
-list5 = [getal for getal in range(1,21)if getal % 2 == 0]
-print(list5)
+# list5 = [getal for getal in range(1,21)if getal % 2 == 0]
+# print(list5)
 
 
 # ==========================================
@@ -69,16 +69,16 @@ print(list5)
 #
 # Verwachte uitkomst:   [1, 1, 2, 3, 5, 8, 13]
 # ==========================================
-
-
-reeks = [0,1,1,2,3]
-while reeks[-1] < 999999:
-    getal1 = reeks[-1]
-    getal2 = reeks[-2]
-    add = getal1 + getal2
-    reeks.append(add)
-
-print(reeks)
+#
+#
+# reeks = [0,1,1,2,3]
+# while reeks[-1] < 0:
+#     getal1 = reeks[-1]
+#     getal2 = reeks[-2]
+#     add = getal1 + getal2
+#     reeks.append(add)
+#
+# print(reeks)
 
 
 
@@ -87,4 +87,67 @@ print(reeks)
 # Maak een lijst ‘kwadraten’ die de kwadraten bevat van de getallen 1 tot en met 10. Gebruik een for loop.
 #
 # Verwachte uitkomst:  [1, 4, 9, 16, 25, 36, 49, 64, 81, 100]
+# ==========================================
+
+# lijst22 = [getal ** 2 for getal in range(1,11)]
+# print(lijst22)
+
+
+
+# ==========================================
+# Voorbeeld opdracht:
+# Declareer twee tuples met de namen ‘tuple_een’ en ‘tuple_twee’.
+# tuple_een krijgt de waarden 1, 2 en 3. tuple_twee krijgt de waarden 4, 5 en 6.
+# Zorg dat je een tuple krijgt met de waarden 1, 2, 3, 4, 5 en 6. Onthoud dat tuples onveranderlijk zijn.
+# # ==========================================
+#
+# tuple_een = (1, 2, 3)
+# tuple_twee = (4, 5, 6)
+#
+# # je zal een nieuwe tuple variabele moeten declareren. De tuples die al gedeclareerd zijn kunnen niet worden aangepast
+# # (zoals een list kan worden aangepast met append, insert en remove).
+# combined_tuple = tuple_een + tuple_twee
+# print('combined tuple: ', combined_tuple)  # Het resultaat is: (1, 2, 3, 4, 5, 6
+#
+
+
+# ==========================================
+# Opdracht 1:
+# maak een tuple aan met de waarden 'b', 'c', 'a'
+# print de waarden van de tuple in de alfabetische volgorde (a, b, c)
+# Tip: maak gebruik van de indexen van de tuple
+#
+# Verwachte uitkomst:  a b c
+# ==========================================
+
+acb_lijst = 'b', 'c', 'a'
+print(acb_lijst)
+print(type(acb_lijst))
+sorteer_acb_lijst = sorted(acb_lijst)
+print(sorteer_acb_lijst)
+
+# ==========================================
+# Opdracht 2:
+# Maak de lijst ‘getal_kwadraat_paar’ aan voor getallen 1 tot en met 5 waarin elk element bestaat uit een tuple die het getal en het bijbehorende kwadraat bevat.
+# Gebruik een list comprehension.
+#
+# Verwachte uitkomst: [(1, 1), (2, 4), (3, 9), (4, 16), (5, 25)]
+# ==========================================
+
+getal_kwadraat_paar = [(x, y) for x in range (6) for y in range (6)]
+
+# getal_kwadraat_paar = []
+# for x in range (6):
+#     getal_kwadraat_paar.append((x,pow(x,2)))
+
+
+print(getal_kwadraat_paar)
+
+# =========================================
+# Opdracht 3:
+# Maak een tuple genaamd tuple_count met de waarden 1, 2, 3, 4, 5
+# Draai de volgorde van de getallen om. Zorg dat je een nieuwe tuple krijgt met de waarden 5, 4, 3, 2, 1
+# Tip: Maak gebruik van de reversed() functie
+#
+# Verwachte uitkomst: (5, 4, 3, 2, 1)
 # ==========================================
