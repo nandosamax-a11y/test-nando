@@ -134,14 +134,17 @@ print(sorteer_acb_lijst)
 # Verwachte uitkomst: [(1, 1), (2, 4), (3, 9), (4, 16), (5, 25)]
 # ==========================================
 
-getal_kwadraat_paar = [(x, y) for x in range (6) for y in range (6)]
+getal_kwadraat_paar = []
+for x in range (6):
+    getal_kwadraat_paar.append((x,pow(x,2)))
+print(getal_kwadraat_paar)
 
 # getal_kwadraat_paar = []
 # for x in range (6):
 #     getal_kwadraat_paar.append((x,pow(x,2)))
 
 
-print(getal_kwadraat_paar)
+
 
 # =========================================
 # Opdracht 3:
@@ -151,3 +154,7 @@ print(getal_kwadraat_paar)
 #
 # Verwachte uitkomst: (5, 4, 3, 2, 1)
 # ==========================================
+
+list2 = [1, 2, 3, 4, 5]
+list2.sort(reverse=True)
+print (list2)
